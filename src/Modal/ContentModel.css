@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.Content_l {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.Content_p {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline1{
+    font-weight: 600;
+    font-size: small;
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+
+.tagline {
+    font-weight: 700;
+    font-size: larger;
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+
+
+
+
+.ContentModel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+/* 
+.ContentModel {
+
+    box-shadow: 2px 2px 1px rgb(24, 22, 22);
+    
+
+} */
+.ContentModel::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentModel_about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+
+}
+
+.ContentModel_title {
+  height: 12%;
+  font-size: 3.5vw;
+  font-weight: 800;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContentModal__description {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; 
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+  background-color: rgb(77, 61, 61);
+  border: 2px solid rgb(226, 222, 222);
+  box-shadow: 4px rgb(255, 255, 255);
+}
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (max-width: 640px)
+{
+    .tagline1
+    {
+  
+      font-size: small;
+  
+    }
+
+
+}    
+
+
+@media (min-width: 835px) {
+  .Content_l {
+    display: none;
+  }
+  .Content_p {
+    display: flex;
+    width: 38%;
+  }
+  .ContentModel {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .ContentModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .ContentModal__title {
+    font-size: 3.5vw;
+  }
+  .ContentModal__description {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .tagline
+  {
+      font-weight: 400;
+      font-size: larger;
+  }
+
+  .tagline1
+  {
+
+    font-size: larger;
+
+  }
+}
